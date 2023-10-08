@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar {
+            height: 20vh;
+            width: 100%;
+            background-color: black;
+            padding: 1px;
+            cursor: pointer;
+            position: fixed;
+            top: 0;
+        }
+
+        .one {
+            height: 40px;
+            width: 150px;
+            margin-top: 25px;
+            margin-left: 50px;
+
+        }
+
+        .navlist {
+            height: 60px;
+            width: 800px;
+            margin-top: -30px;
+            margin-left: 300px;
+            font-size: 80%;
+            font-weight: bold;
+        }
+
+        .two {
+            display: inline;
+            margin: 10px;
+
+        }
+        .two a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .three {
+            height: 40px;
+            width: 150px;
+            margin-left: 1120px;
+            margin-top: -60px;
+
+        }
+
+        .fb {
+            color: white;
+        }
+
+        .youtube {
+            color: white;
+            margin-left: 5px;
+        }
+
+        .instagram {
+            color: white;
+            margin-left: 5px;
+        }
+
+        .four {
+            margin-left: 110px;
+            height: 25px;
+            width: 25px;
+            margin-top: -20px;
+
+        }
+
+        .section {
+            height: 130vh;
+            width: 100%;
+            border: 1px solid;
+            background-image: url(https://flaris.pl/wp-content/uploads/2022/07/Flaris_pilot-min.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .one1 {
+            height: 50px;
+            width: 300px;
+            margin-top: 170px;
+            margin-left: 450px;
+            color: rgb(0, 170, 255);
+            text-align: center;
+        }
+
+        .gsign {
+            font-size: 70%;
+            color: rgb(0, 170, 255);
+            font-weight: bold;
+
+        }
+
+        .lsign {
+            font-size: 70%;
+            color: rgb(0, 170, 255);
+            font-weight: bold;
+        }
+
+        .type {
+            font-size: 170%;
+        }
+
+        .statement {
+            height: 70px;
+            width: max-content;
+            margin-top: 10px;
+            margin-left: 400px;
+            color: white;
+            text-align: center;
+            font-size: 220%;
+        }
+
+        .arrowdown {
+            font-size: 200%;
+            color: white;
+            margin-top: 400PX;
+            margin-left: 650px;
+            cursor: pointer;
+        }
+
+
+        .section1 {
+            height: 100vh;
+            width: 100%;
+        }
+
+        .one2 {
+            height: max-content;
+            width: max-content;
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 530px;
+        }
+
+        .one3 {
+            color: black;
+            font-weight: bold;
+            font-size: 160%;
+        }
+
+        .one4 {
+            height: 450px;
+            width: 500px;
+            margin-top: 50px;
+            background-image: url(https://flaris.pl/wp-content/uploads/2019/01/zostan_pilotem.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .one5 {
+            height: 470px;
+            width: 600px;
+            margin-top: -450px;
+            margin-left: 600px;
+            /* border: 1px solid; */
+            border: 1px solid rgba(0, 0, 0, 0.199);
+            border-radius: 5px;
+        }
+
+        .one6 {
+            margin-top: 70px;
+            margin-left: 40px;
+            line-height: 30px;
+            
+        }
+
+        .one7 {
+            color: rgb(0, 170, 255);
+            margin-left: 40px;
+            margin-top: 40px;
+            font-weight: bold;
+            cursor: pointer;
+
+        }
+
+        .section2 {
+            height: 90vh;
+            width: 100%;
+
+        }
+
+        .one8 {
+            height: max-content;
+            width: max-content;
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 530px;
+        }
+
+        .one9 {
+            color: black;
+            font-weight: bold;
+            font-size: 160%;
+        }
+
+        .one10 {
+            height: 400px;
+            width: 500px;
+            margin-top: 50px;
+            background-image: url(https://flaris.pl/wp-content/uploads/2019/01/zostan_instruktorem.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .one11 {
+            height: 420px;
+            width: 600px;
+            /* border: 1px solid; */
+            margin-top: -400px;
+            margin-left: 600px;
+            border: 1px solid rgba(0, 0, 0, 0.199);
+            border-radius: 5px;
+        }
+
+        .one12 {
+            margin-top: 70px;
+            margin-left: 70px;
+            line-height: 30px;
+        }
+
+        .one13 {
+            color: rgb(0, 170, 255);
+            margin-left: 70px;
+            margin-top: 40px;
+            font-weight: bold;
+            cursor: pointer;
+
+        }
+
+        .section3 {
+            height: 100vh;
+            width: 100%;
+        }
+
+        .one14 {
+            height: 450px;
+            width: 500px;
+            margin-top: 10px;
+            background-image: url(http://flaris.pl/wp-content/uploads/2019/01/masz_pytania_filtr.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .one15 {
+            height: max-content;
+            width: max-content;
+            margin-left: 580px;
+            margin-top: -380px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 180%;
+            color: black;
+        }
+
+        .one16 {
+            margin-top: 30px;
+            margin-left: 580px;
+        }
+
+        .one17 {
+            margin-left: 580px;
+            margin-top: 40px;
+            border: 1px solid rgb(0, 170, 255);
+            color: rgb(0, 170, 255);
+            text-align: center;
+            height: 50px;
+            width: 230px;
+            background-color: white;
+            font-size: 100%;
+            font-weight: bold;
+            cursor: pointer;
+
+        }
+
+        .one17:hover {
+            background-color: rgb(0, 170, 255);
+            color: white;
+        }
+
+        .section5 {
+            height: 85vh;
+            width: 100%;
+            background-color: rgb(0, 19, 43);
+            padding: 1px;
+        }
+
+        .style13 {
+            height: 30px;
+            width: 470px;
+
+            margin-top: 80px;
+            margin-left: 120px;
+        }
+
+        .style14 {
+            height: 30px;
+            width: 150px;
+
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+            font-weight: bold;
+            font-size: 100%;
+        }
+
+        .style15 {
+            height: 30px;
+            width: 150px;
+
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+        }
+
+        .style16 {
+            height: 30px;
+            width: 150px;
+
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+        }
+
+        .style17 {
+            height: 30px;
+            width: 470px;
+
+            margin-left: 120px;
+            margin-top: 20px;
+
+        }
+
+        .style18 {
+            height: 30px;
+            width: 150px;
+
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+
+
+        }
+
+        .style19 {
+            height: 30px;
+            width: 150px;
+
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+        }
+
+        .style20 {
+            height: 30px;
+            width: 150px;
+
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+        }
+
+        .style21 {
+            height: 30px;
+            width: 470px;
+
+            margin-left: 120px;
+            margin-top: 10px;
+
+        }
+
+        .style22 {
+            height: 30px;
+            width: 150px;
+
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+
+
+        }
+
+        .style23 {
+            height: 30px;
+            width: 150px;
+
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+        }
+
+        .style24 {
+            height: 30px;
+            width: 150px;
+
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+        }
+
+        .style25 {
+            height: 30px;
+            width: 150px;
+
+            color: white;
+            margin-left: 120px;
+            margin-top: 10px;
+        }
+
+        .style26 {
+            height: 50px;
+            width: 300px;
+
+            margin-left: 700px;
+            margin-top: -160px;
+            color: white;
+            font-size: 150%;
+        }
+
+        .style27 {
+            height: 60px;
+            width: 400px;
+
+            margin-top: 20px;
+
+            margin-left: 700px;
+        }
+
+        .style28 {
+            background-color: white;
+
+
+            border-radius: 10px;
+            height: 50px;
+            width: 400px;
+            padding: 10px;
+
+        }
+
+        .style29 {
+            height: 50px;
+            width: 400px;
+            border: 2px solid white;
+
+            border-radius: 10px;
+            margin-left: 700px;
+            margin-top: 10px;
+            background-color: transparent;
+            color: white;
+            font-size: 120%;
+            cursor: pointer;
+        }
+
+        .style29:hover {
+            background-color: steelblue;
+        }
+
+        .style30 {
+            height: 30px;
+            width: 400px;
+            margin-left: 700px;
+            margin-top: 20px;
+            color: white;
+            font-weight: 1;
+        }
+
+        .style31 {
+            height: 50px;
+            width: 200px;
+            margin-left: 120px;
+
+        }
+
+        .image1 {
+            height: 60%;
+            width: 80%;
+        }
+
+        .style32 {
+            border: 1px solid rgb(0, 170, 255);
+            width: 1100px;
+            margin-left: 100px;
+
+        }
+
+        .style33 {
+            margin-left: 120px;
+            color: rgb(189, 191, 199);
+            margin-top: 40px;
+
+        }
+
+        .style34 {
+            height: 50px;
+            width: 150px;
+            margin-left: 1000px;
+        }
+
+        .fbb {
+            font-size: 130%;
+            margin-top: 10px;
+        }
+
+        .youutube {
+            font-size: 130%;
+            margin-left: 15px;
+            margin-top: 10px;
+        }
+
+        .insta {
+            font-size: 130%;
+            margin-left: 15px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="one">
+            <a href="./index.html"><img src="./images/logoFlarisSVG.svg" alt=""></a>   
+        </div>
+        <div class="navlist">
+            <ul>
+                <li class="two"><a href="./Aircraft.html">AIRCRAFT</a></li>
+                <li class="two"><a href="./piloting courses.html">PILOTING COURSES</a></li>
+                <li class="two"><a href="./purchase.html">PURCHASE</a></li>
+                <li class="two"><a href="">NEWS</a></li>
+                <li class="two"><a href="">OUR STORY</a></li>
+                <li class="two"><a href="">PRESS ROOM</a></li>
+                <li class="two"><a href="./contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="three">
+            <i class="fa-brands fa-facebook fb"></i>
+            <i class="fa-brands fa-youtube youtube"></i>
+            <i class="fa-brands fa-instagram instagram"></i>
+            <div class="four">
+                <img src="./iconPLflag-03.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="one1">
+            <i class="fa-regular fa-greater-than gsign"></i>
+            <SPan class="type">FLARIS LAR01</SPan>
+            <i class="fa-solid fa-less-than lsign"></i>
+        </div>
+        <div class="statement">SIT AT THE CONTROLS</div>
+        <i class="fa-solid fa-angle-down arrowdown"></i>
+    </div>
+    <div class="section1">
+        <div class="one2">
+            <i class="fa-regular fa-greater-than gsign"></i>
+            <span class="one3">BECOME A PILOT</span>
+            <i class="fa-solid fa-less-than lsign"></i>
+        </div>
+        <div class="one4"></div>
+        <div class="one5">
+            <p class="one6">Get a taste of flying a jet and soar to the highest level of independence. <br> The skills
+                you will  acquire during the course will open your way to <br> astonishing jet flights. The culmination
+                of the  course is a pilot’s license <br> allowing you to fly Flaris LAR 01 single- handedly at any
+                distance. <br> Also, upon completing the course, you  will receive a membership in our <br> elite association
+                which is  admired worldwide.
+
+            </p>
+            <p class="one7">Start the course at the Aviation Academy <br>
+                and become a Flaris pilot</p>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="one8">
+            <i class="fa-regular fa-greater-than gsign"></i>
+            <span class="one9">BECOME AN INSTRUCTOR </span>
+            <i class="fa-solid fa-less-than lsign"></i>
+        </div>
+        <div class="one10"></div>
+        <div class="one11">
+            <p class="one12">Broaden your professional skills and become a flight-instructor <br> of an aircraft that
+                piques interest across the entire world. <br> Getting a flight instructor’s certificate of Flaris
+                aircraft may turn <br> out to be the most significant and gratifying decision in your <br> career. If
+                you have not steered a jet-propelled aircraft before, <br> our course will certainly thrill you with
+                unforgettable <br> impressions of flying this high-performance jet.</p>
+            <p class="one13">More information</p>
+        </div>
+    </div>
+    <div class="section3">
+        <div class="one14"></div>
+        <div class="one15">
+            <i class="fa-regular fa-greater-than gsign"></i>
+            <span>CONTACT US</span>
+        </div>
+        <p class="one16">Go to the website of the Aviation Academy <br>
+            and get a license to fly Flaris</p>
+        <button class="one17">Become a pilot</button>
+    </div>
+    <div class="section5">
+        <div class="style13">
+            <div class="style14">Legal</div>
+            <div class="style15">About</div>
+            <div class="style16">Informations</div>
+        </div>
+        <div class="style17">
+            <div class="style18">GDPR</div>
+            <div class="style19">Press room</div>
+            <div class="style20">FAQ</div>
+        </div>
+        <div class="style21">
+            <div class="style22">Privacy policy</div>
+            <div class="style23">Manufacturer</div>
+            <div class="style24">News</div>
+        </div>
+        <div class="style25">Cookies</div>
+        <div class="style26">Sign up to our newsletter
+        </div>
+        <div class="style27">
+            <input class="style28" type="text" placeholder="e-mail">
+        </div>
+        <button class="style29">Sign up</button>
+        <h4 class="style30">Form protected by reCAPTCHA and Google</h4>
+        <div class="style31">
+            <img src="https://flaris.pl/wp-content/uploads/2018/09/LOGO_FLARIS_white-1.png" alt="">
+        </div>
+        <hr class="style32">
+        <p class="style33">© 2022 Flaris. All rights reserved.</p>
+        <div class="style34">
+            <i class="fa-brands fa-facebook fb fbb "></i>
+            <i class="fa-brands fa-youtube youtube youutube"></i>
+            <i class="fa-brands fa-instagram instagram insta"></i>
+        </div>
+    </div>
+
+</body>
+
+</html>

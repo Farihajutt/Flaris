@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+             * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar {
+            height: 20vh;
+            width: 100%;
+            background-color: black;
+            padding: 1px;
+            cursor: pointer;
+            position: fixed;
+            top: 0;
+        }
+
+        .one {
+            height: 40px;
+            width: 150px;
+            margin-top: 25px;
+            margin-left: 50px;
+
+        }
+
+        .navlist {
+            height: 60px;
+            width: 800px;
+            margin-top: -30px;
+            margin-left: 300px;
+            font-size: 80%;
+            font-weight: bold;
+        }
+
+        .two {
+            display: inline;
+            margin: 10px;
+
+        }
+        .two a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .three {
+            height: 40px;
+            width: 150px;
+            margin-left: 1120px;
+            margin-top: -60px;
+
+        }
+
+        .fb {
+            color: white;
+        }
+
+        .youtube {
+            color: white;
+            margin-left: 5px;
+        }
+
+        .instagram {
+            color: white;
+            margin-left: 5px;
+        }
+
+        .four {
+            margin-left: 110px;
+            height: 25px;
+            width: 25px;
+            margin-top: -20px;
+
+        }
+        .section{
+            height: 120vh;
+            width: 100%;
+            background-image: url(http://flaris.pl/wp-content/uploads/2022/07/Flaris_PURCHASE2-min.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 1px;
+        }
+        .one1{
+            height: max-content;
+            width: max-content;
+            margin-top: 160px;
+            margin-left: 400px;
+            
+        }
+        .gsign{
+            font-size: 70%;
+            color: rgb(0, 170, 255);
+            font-weight: bold;
+
+        }
+        .lsign{
+            font-size: 70%;
+            color: rgb(0, 170, 255);
+            font-weight: bold;
+        }
+        .one2{
+            text-align: center;
+            font-size: 180%;
+            text-align: center;
+            color: rgb(0, 170, 255);
+
+        }
+        .one3{
+            height: max-content;
+            width: max-content;
+            margin-left: 350px;
+            font-size: 200%;
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+
+        }
+        .arrowdown{
+            font-size: 200%;
+            color: white;
+            margin-top: 370PX;
+            margin-left: 650px;
+            cursor: pointer;
+        }
+        .section1{
+            height: 30vh;
+            width: 100%;
+        }
+        .one4{
+            height: max-content;
+            width: max-content;
+            margin-top: 70px;
+            margin-left: 420px;
+        }
+        .one5{
+            color: rgba(0, 0, 0, 0.788);
+            font-size: 180%;
+            text-align: center;
+            font-weight: bold;
+        }
+        .one6{
+            text-align: center;
+            height: max-content;
+            width: max-content;
+            margin-top: 30px;
+            margin-left: 300px;
+            color: rgba(0, 0, 0, 0.613);
+        }
+        .section2{
+            height: 100vh;
+            width: 100%;
+        }
+        .one7{
+            height: 70vh;
+            width: 40%;
+            margin-left: 110px;
+            background-image: url(https://flaris.pl/wp-content/uploads/2022/07/290611577_139287222101890_6790155899189441362_n.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .one8{
+            height: 88vh;
+            width: 35%;
+            margin-left: 650px;
+            border: 1px solid rgba(0, 0, 0, 0.177);
+            border-radius: 5px;
+            margin-top: -405px;
+        }
+        .one9{
+            margin-top: 60px;
+            margin-left: 50px;
+            font-weight: bold;
+            color: black;
+        }
+        .one10{
+            margin-top: 30px;
+            margin-left: 50px;
+            line-height: 30px;
+            color: rgba(0, 0, 0, 0.615);
+        }
+        .section3{
+            height: 60vh;
+            width: 100%;
+        }
+        .one11{
+            height: 40vh;
+            width: 30%;
+            margin-left: 100px;
+            margin-top: 40px;
+            /* border: 1px solid; */
+            border: 1px solid rgba(0, 0, 0, 0.177);
+            border-radius: 5px;
+
+        }
+        .one12{
+            text-align: center;
+            color:black;
+            margin-top: 60px;
+        }
+        .one13{
+            margin-left: 40px;
+            margin-top: 20px;
+            line-height: 30px;
+            color: rgba(0, 0, 0, 0.615);
+        }
+        .one14{
+            height: 60vh;
+            width: 45%;
+            margin-left: 530px;
+            margin-top: -230px;
+            background-image: url(https://flaris.pl/wp-content/uploads/2022/07/292156281_1149526388938148_35375259042819739_n-1.jpg);
+            background-position: center;
+            background-size: cover;
+            
+        }
+        .section4{
+            height: 50vh;
+            width: 100%;
+        }
+        .one15{
+            height: 50vh;
+            width: 45%;
+            margin-top: 40px;
+            margin-left: 100px;
+            background-image: url(https://flaris.pl/wp-content/uploads/2019/01/nasza_historia.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .one16{
+            height: 50vh;
+            width: 30%;
+            /* border: 1px solid; */
+            margin-left: 710px;
+            margin-top: -50vh;
+            border: 1px solid rgba(0, 0, 0, 0.177);
+            border-radius: 5px;
+        }
+        .one17{
+            color: black;
+            margin-top: 60px;
+            margin-left: 40px;
+        }
+        .one18{
+            margin-left: 40px;
+            margin-top: 30px;
+            line-height: 30px;
+            color: rgba(0, 0, 0, 0.615);
+        }
+        .section5{
+            height: 90vh;
+            width: 100%;
+        }
+        .one19{
+            height: 80vh;
+            width: 30%;
+            /* border: 1px solid; */
+            margin-left: 100px;
+            border: 1px solid rgba(0, 0, 0, 0.177);
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        .one20{
+            color: black;
+            margin-top: 60px;
+            margin-left: 30px;
+            font-weight: bold;
+
+        }
+        .one21{
+            margin-top: 30px;
+            margin-left: 30px;
+            line-height: 30px;
+            color: rgba(0, 0, 0, 0.615);
+        }
+        .one22{
+            height: 80vh;
+            width: 45%;
+            margin-left: 530px;
+            margin-top: -80vh;
+            background-image: url(https://flaris.pl/wp-content/uploads/2019/01/zalety_wygoda.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .section6{
+            height: 240vh;
+            width: 100%;
+            background-color: black;
+        }
+        .one23{
+            height: 65vh;
+            width: 100%;
+            background-image: url(https://flaris.pl/wp-content/uploads/2018/09/enface-4.png);
+            background-position: center;
+            background-size: cover;
+            padding: 20px;
+        }
+        .one24{
+            height: max-content;
+            width: max-content;
+            margin-top: 50px;
+            margin-left: 700px;
+            font-weight: bold;
+
+        }
+        .one25{
+            color: white;
+            font-size: 180%;
+
+            
+        }
+        .one26{
+            height: max-content;
+            width: max-content;
+            margin-top: 50px;
+            color: white;
+            line-height: 25px;
+            margin-left: 700px;
+        }
+        .one27{
+            height: 50px;
+            width: 200px;
+            color:rgb(0, 170, 255);
+            border: 1px solid rgb(0, 170, 255);
+            font-size: 110%;
+            font-weight: bold;
+            background-color: transparent;
+            margin-left: 850px;
+            margin-top: 60px;
+            cursor: pointer;
+        }
+        .one27:hover{
+            background-color: rgb(0, 170, 255);
+            color: white;
+            
+        }
+        .one28{
+            height: 60vh;
+            width: 100%;
+
+
+        }
+        .one29{
+            height: max-content;
+            width: max-content;
+            margin-top: 70px;
+            margin-left: 300px;
+            font-weight: bold;
+            /* padding: 20px; */
+        }
+        .one30{
+            color: white;
+            font-size: 180%;
+
+        }
+        .one31{
+            margin-top: 50px;
+            margin-left: 150px;
+            line-height: 20px;
+            color: white;
+        }
+        .one32{
+            height: 50px;
+            width: 200px;
+            color:rgb(0, 170, 255);
+            border: 1px solid rgb(0, 170, 255);
+            font-size: 110%;
+            font-weight: bold;
+            background-color: transparent;
+            margin-left: 280px;
+            margin-top: 40px;
+            cursor: pointer;
+
+        }
+        .one32:hover{
+            background-color: rgb(0, 170, 255);
+            color: white;
+
+        }
+        .one33{
+            height: 350px;
+            width: 350px;
+            margin-left: 800px;
+            margin-top: -300px;
+            background-image: url(https://flaris.pl/wp-content/uploads/2019/01/leasing.png);
+            background-position: center;
+            background-size: cover;
+        }
+        .one34{
+            height: 105vh;
+            width: 100%;
+        }
+        .one35{
+            height: 105vh;
+            width: 50%;
+            background-image: url(http://flaris.pl/wp-content/uploads/2019/01/wynajem.png);
+            background-position: center;
+            background-size: cover;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .one36{
+            height: max-content;
+            width: max-content;
+            margin-top: 50px;
+            margin-left: 50px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .one37{
+            font-size: 180%;
+            font-weight: bold;
+            color: white;
+        }
+        .one38{
+            margin-left: 700px;
+            margin-top: -80vh;
+           height: max-content;
+           width: max-content;
+            line-height: 25px;
+            color: white;
+        }
+        .one39{
+            height: 50px;
+            width: 200px;
+            color:rgb(0, 170, 255);
+            border: 1px solid rgb(0, 170, 255);
+            font-size: 110%;
+            font-weight: bold;
+            background-color: transparent;
+            margin-left: 850px;
+            margin-top: 15vh;
+            cursor: pointer;
+
+        }
+        .one39:hover{
+            background-color: rgb(0, 170, 255);
+            color: white;
+        }
+        .section7{
+            height: 150vh;
+            width: 100%;
+        }
+        .one40{
+            height: 150vh;
+            width: 40%;
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(https://flaris.pl/wp-content/uploads/2019/01/masz_pytania_filtr.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .one41{
+            height: 150vh;
+            width: 52%;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .one42{
+            height: max-content;
+            width: max-content;
+            margin-top: 50px;
+            margin-left: 60px;
+        }
+        .one43{
+            font-size: 180%;
+            font-weight: bold;
+            color: black;
+
+        }
+        .one44{
+            height: 50px;
+            width: 250px;
+            border: 1px solid;
+            margin-left: 50px ;
+            margin-top: 60px;
+
+        }
+        .one45{
+            height: 50px;
+            width: 250px;
+            border: 1px solid;
+            margin-left: 10px;
+
+        }
+        .one46{
+            height: 50px;
+            width: 250px;
+            border: 1px solid;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        .one47{
+            height: 50px;
+            width: 250px;
+            margin-left: 10px;
+            margin-top: 20px;
+            border: 1px solid;
+        }
+        .one48{
+            margin-left: 50px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .one49{
+            height: max-content;
+            width: max-content;
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+        .one50{
+            height: max-content;
+            width: max-content;
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+        .one51{
+            height: 150px;
+            width: 520px;
+            border: 1px solid;
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+        .one52{
+            height: 40px;
+            width: 520px;
+            border: 1px solid;
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+        .one53{
+            height: 40px ;
+            width: 520px;
+            margin-left: 50px;
+            margin-top: 10px;
+
+        }
+        .one54{
+            height: 150px;
+            width: 520px;
+            margin-top: 10px ;
+            margin-left: 50px;
+        }
+        .one55{
+            height: max-content;
+            width: max-content;           
+        }
+        .one56{
+            height: 40px;
+            width: 80px;
+            margin-top: 10px;
+            margin-left: 490px;
+            color:  rgb(0, 170, 255);
+           border: 1px solid  rgb(0, 170, 255);
+           background-color: white;
+           font-size: 90%;
+           font-weight: bold;
+           cursor: pointer;
+        }
+        .one56:hover{
+            background-color: seashell;
+        }
+        .section8{
+            height: 85vh;
+            width: 100%;
+            background-color: rgb(0,19,43);
+            padding: 1px;
+        }
+        .style13{
+            height: 30px;
+            width: 470px;
+        
+            margin-top: 80px;
+            margin-left: 120px;
+        }
+        .style14{
+            height: 30px;
+            width: 150px;
+        
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+            font-weight: bold;
+            font-size: 100%;
+        }
+        .style15{
+            height: 30px;
+            width: 150px;
+            
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+        }
+        .style16{
+            height: 30px;
+            width: 150px;
+            
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+        }
+        .style17{
+            height: 30px;
+            width: 470px;
+            
+            margin-left: 120px;
+            margin-top: 20px;
+
+        }
+        .style18{
+            height: 30px;
+            width: 150px;
+            
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+            
+        
+        }
+        .style19{
+            height: 30px;
+            width: 150px;
+            
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+        }
+        .style20{
+            height: 30px;
+            width: 150px;
+            
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+        }
+        .style21{
+            height: 30px;
+            width: 470px;
+        
+            margin-left: 120px;
+            margin-top: 10px;
+
+        }
+        .style22{
+            height: 30px;
+            width: 150px;
+            
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+            
+        
+        }
+        .style23{
+            height: 30px;
+            width: 150px;
+            
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+        }
+        .style24{
+            height: 30px;
+            width: 150px;
+            
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+        }
+        .style25{
+            height: 30px;
+            width: 150px;
+        
+            color: white;
+            margin-left: 120px;
+            margin-top: 10px;
+        }
+        .style26{
+            height: 50px;
+            width: 300px;
+            
+            margin-left: 700px;
+            margin-top: -160px;
+            color: white;
+            font-size: 150%;
+        }
+        .style27{
+            height: 60px;
+            width: 400px;
+        
+            margin-top: 20px;
+        
+            margin-left: 700px;
+        }
+        .style28{
+            background-color: white;
+            
+        
+            border-radius: 10px;
+            height: 50px;
+            width: 400px;
+            padding: 10px;
+            
+        }
+        .style29{
+            height: 50px;
+            width: 400px;
+            border: 2px solid white;
+        
+            border-radius: 10px;
+            margin-left: 700px;
+            margin-top: 10px;
+            background-color: transparent;
+            color: white;
+            font-size: 120%;
+            cursor: pointer;
+        }
+        .style29:hover{
+            background-color: steelblue;
+        }
+        .style30{
+            height: 30px;
+            width: 400px;
+            margin-left: 700px;
+            margin-top: 20px;
+            color: white;
+            font-weight: 1;
+        }
+        .style31{
+            height: 50px;
+            width: 200px;
+            margin-left: 120px;
+            
+        }
+        .image1{
+            height: 60%;
+            width: 80%;
+        }
+        .style32{
+            border: 1px solid rgb(0, 170, 255);
+            width: 1100px;
+            margin-left: 100px;
+
+        }
+        .style33{
+            margin-left: 120px;
+            color: rgb(189,191,199);
+            margin-top: 40px;
+        
+        }
+        .style34{
+            height: 50px;
+            width: 150px;
+            margin-left: 1000px;
+        }
+        .fbb{
+            font-size: 130%;
+            margin-top: 10px;
+        }
+        .youutube{
+            font-size: 130%;
+            margin-left: 15px;
+            margin-top: 10px;
+        }
+        .insta{
+            font-size: 130%;
+            margin-left: 15px;
+            margin-top: 10px;
+        }
+      
+    
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="one">
+            <a href="./index.html"><img src="./images/logoFlarisSVG.svg" alt=""></a>
+        </div>
+        <div class="navlist">
+            <ul>
+                <li class="two"><a href="./Aircraft.html">AIRCRAFT</a></li>
+                <li class="two"><a href="./piloting courses.html">PILOTING COURSES</a></li>
+                <li class="two"><a href="./purchase.html">PURCHASE</a></li>
+                <li class="two"><a href="">NEWS</a></li>
+                <li class="two"><a href="">OUR STORY</a></li>
+                <li class="two"><a href="">PRESS ROOM</a></li>
+                <li class="two"><a href="./contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="three">
+            <i class="fa-brands fa-facebook fb"></i>
+            <i class="fa-brands fa-youtube youtube"></i>
+            <i class="fa-brands fa-instagram instagram"></i>
+            <div class="four">
+                <img src="./iconPLflag-03.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="one1">
+            <i class="fa-regular fa-greater-than gsign"></i>
+            <span class="one2"> PURCHASE, LEASING, OR SHARING</span>
+            <i class="fa-solid fa-less-than lsign"></i>
+        </div>
+        <div class="one3">CHOOSE YOUR WAY OF USING THE LAR 01</div>
+        <i class="fa-solid fa-angle-down arrowdown"></i>
+    </div>
+    <div class="section1">
+        <div class="one4">
+            <i class="fa-regular fa-greater-than gsign"></i>
+            <span class="one5">AN EXCEPTIONAL ALTERNATIVE</span>
+            <i class="fa-solid fa-less-than lsign"></i>
+        </div>
+        <p class="one6">Nowadays, time is extremely valuable. FLARIS LAR 1 goes to war with long and tiring travels <br> and baggage claims. It is an answer to the challenges of modern transportation. It is an <br> alternative to congested highways and cruise flights.</p>
+    </div>
+    <div class="section2">
+        <div class="one7"></div>
+        <div class="one8">
+            <h2 class="one9">Independence</h2>
+            <p class="one10">You gain a new dimension of freedom <br> by investing in LAR 01. Thanks to its ability <br> to operate on grass airstrips, Flaris allows <br> you to avoid large airports and get closer <br> to your destination point. There are over <br> 10,000 aeroclubs and 45,000 grass <br> airstrips in the world. Flaris needs just <br> 200 m of paved runway to takeoff and 250 <br> m to land. We have 124 airstrips and 62 <br> civilian airports in Poland, according <br> to the Register of Aerodromes and <br> Airstrips (ULC) as of the 5th of April 2019.</p>
+        </div>
+    </div>
+    <div class="section3">
+        <div class="one11">
+            <h2 class="one12">The Earth becomes smaller</h2>
+            <p class="one13">Such flexibility is not achievable with any <br> other jet aircraft in the world.</p>
+        </div>
+        <div class="one14"></div>
+    </div>
+    <div class="section4">
+        <div class="one15"></div>
+        <div class="one16">
+            <h2 class="one17">Economy</h2>
+            <p class="one18">LAR 01 is unparalleled in terms of <br> purchase and exploitation <br> costs. Operating cost: 1,2 $/nm, or 450 <br> $/hour</p>
+        </div>
+    </div>
+    <div class="section5">
+        <div class="one19">
+        <h2 class="one20">Convenience</h2>
+        <p class="one21">LAR 01 meets the communication needs <br> of the business world. It will quickly and <br> comfortably get you to any destination. It <br> is an option for private individuals who <br> value their time and the comfort of travel <br> as well. Taking off from aeroclub airstrips <br> allows you to save the time spent <br> on getting to the airport and customs <br> procedures. You will also land closer <br> to your destination.</p>
+
+        </div>
+        <div class="one22"></div>
+    </div>
+    <div class="section6">
+        <div class="one23">
+            <div class="one24">
+                <i class="fa-regular fa-greater-than gsign"></i>
+                <span class="one25">PURCHASE</span>
+            </div>
+            <p class="one26">Purchasing LAR 01 is the most complete and apparent way <br> to own an aircraft. It is especially popular among corporate <br> clientele, service groups and medium-sized companies, and <br> individual clients. In many countries, such investment can <br> be amortised through advantageous tax deductions.</p>
+            <button class="one27">Learn more</button>
+        </div>
+        <div class="one28">
+            <div class="one29">
+                <i class="fa-regular fa-greater-than gsign"></i>
+                <span class="one30">LEASING</span>
+            </div>
+            <p class="one31">A form of usage attractive to companies that do not want <br> to or are not able to purchase a jet. Leasing allows using the <br> LAR 01 in a periodic payment system. After a fixed period, it is <br> possible to acquire the aircraft and include it into the assets of <br> your company.</p>
+            <button class="one32">Learn more</button>
+            <div class="one33"></div>
+        </div>
+        <div class="one34">
+            <div class="one35"></div>
+            <div class="one36">
+                <i class="fa-regular fa-greater-than gsign"></i>
+                <span class="one37">RENTAL</span>
+            </div>
+            <p class="one38">An ideal option for corporate and individual clients who only <br> occasionally use private aircraft transport. It is possible to pilot <br> the jet or use the services of professional pilots, depending <br> on the qualifications of the client. In the latter case, rental <br> resembles an air taxi service.</p>
+            <button class="one39">Learn more</button>
+        </div>
+    </div>
+    <div class="section7">
+        <div class="one40"></div>
+        <div class="one41">
+            <div class="one42">
+                <i class="fa-regular fa-greater-than gsign"></i>
+                <span class="one43">FILL OUT THE CONTACT FORM:</span>
+            </div>
+           <input class="one44" type="text" placeholder="First name" style="border: 1px solid rgba(0, 0, 0, 0.192); border-radius: 5px ; padding-left: 5px;">
+           <input class="one45" type="text" placeholder="E-mail" style="border: 1px solid rgba(0, 0, 0, 0.192); border-radius: 5px ; padding-left: 5px;">
+           <input class="one46" type="text" placeholder="Last name" style="border: 1px solid rgba(0, 0, 0, 0.192); border-radius: 5px ; padding-left: 5px;">
+           <input class="one47" type="text" placeholder="Phone number" style="border: 1px solid rgba(0, 0, 0, 0.192); border-radius: 5px ; padding-left: 5px;">
+           <p class="one48">Are you a pilot?</p>
+           <div class="one49">
+           Yes <input type="radio">
+           </div>
+           <div class="one50">
+            No <input type="radio">
+           </div>
+           <input class="one51" type="text" placeholder="What are your qualifications" style="border: 1px solid rgba(0, 0, 0, 0.192); border-radius: 5px ; padding-left: 15px;">
+           <input class="one52" type="text" placeholder="Where would you like to operate the Flaris aircraft?" style="border: 1px solid rgba(0, 0, 0, 0.192); border-radius: 5px ; padding-left: 15px;">
+           <input class="one53" type="text" placeholder="Which purchase option are you ineterested in?" style="border: 1px solid rgba(0, 0, 0, 0.192); border-radius: 5px ; padding-left: 15px;">
+          <input class="one54" type="text" placeholder="Your message" style="border: 1px solid rgba(0, 0, 0, 0.192); border-radius: 5px ; padding-left: 15px;">
+          <div class="one55">
+            <button class="one56">Send</button>
+          </div>
+        </div>
+    </div>
+    <div class="section8">
+        <div class="style13">
+            <div class="style14">Legal</div>
+            <div class="style15">About</div>
+            <div class="style16">Informations</div>
+        </div>
+        <div class="style17">
+            <div class="style18">GDPR</div>
+            <div class="style19">Press room</div>
+            <div class="style20">FAQ</div>
+        </div>
+        <div class="style21">
+            <div class="style22">Privacy policy</div>
+            <div class="style23">Manufacturer</div>
+            <div class="style24">News</div>
+        </div>
+        <div class="style25">Cookies</div>
+        <div class="style26">Sign up to our newsletter
+        </div>
+        <div class="style27">
+            <input class="style28" type="text" placeholder="e-mail">
+        </div>
+        <button class="style29">Sign up</button>
+        <h4 class="style30">Form protected by reCAPTCHA and Google</h4>
+        <div class="style31">
+           <img src="https://flaris.pl/wp-content/uploads/2018/09/LOGO_FLARIS_white-1.png" alt="">
+        </div>
+        <hr class="style32">
+        <p class="style33">© 2022 Flaris. All rights reserved.</p>
+        <div class="style34">
+            <i class="fa-brands fa-facebook fb fbb "></i>
+            <i class="fa-brands fa-youtube youtube youutube"></i>
+            <i class="fa-brands fa-instagram instagram insta"></i>
+        </div>
+    </div>
+    
+</body>
+</html>

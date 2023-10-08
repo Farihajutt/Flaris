@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+          * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar {
+            height: 20vh;
+            width: 100%;
+            background-color: black;
+            padding: 1px;
+            cursor: pointer;
+            position: fixed;
+            top: 0;
+        }
+
+        .one {
+            height: 40px;
+            width: 150px;
+            margin-top: 25px;
+            margin-left: 50px;
+
+        }
+
+        .navlist {
+            height: 60px;
+            width: 800px;
+            margin-top: -30px;
+            margin-left: 300px;
+            font-size: 80%;
+            font-weight: bold;
+        }
+
+        .two {
+            display: inline;
+            margin: 10px;
+
+        }
+        .two a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .three {
+            height: 40px;
+            width: 150px;
+            margin-left: 1120px;
+            margin-top: -60px;
+
+        }
+
+        .fb {
+            color: white;
+        }
+
+        .youtube {
+            color: white;
+            margin-left: 5px;
+        }
+
+        .instagram {
+            color: white;
+            margin-left: 5px;
+        }
+
+        .four {
+            margin-left: 110px;
+            height: 25px;
+            width: 25px;
+            margin-top: -20px;
+
+        }
+        .section {
+            height: 150vh;
+            width: 100%;
+            background-image: url(https://flaris.pl/wp-content/uploads/2022/07/Flaris_AIRCRAFT3-min.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 1px;
+        }
+
+        .one1 {
+            height: 50px;
+            width: 450px;
+            margin-top: 150px;
+            margin-left: 400px;
+
+
+        }
+
+        .one2 {
+            font-size: 80%;
+            color: rgb(0, 170, 255);
+            font-weight: bold;
+
+
+        }
+
+        .one3 {
+            color: rgb(0, 170, 255);
+            font-size: 170%;
+
+        }
+
+        .one4 {
+            font-size: 80%;
+            color: rgb(0, 170, 255);
+            font-weight: bold;
+
+        }
+
+        .one5 {
+            height: 130px;
+            width: 800px;
+            margin-left: 250px;
+        }
+
+        .one6 {
+            color: white;
+            text-align: center;
+            font-weight: 1;
+        }
+
+        .one7 {
+            font-size: 200%;
+            color: white;
+            margin-top: 470PX;
+            margin-left: 650px;
+            cursor: pointer;
+        }
+        .section1{
+            height: 10vh;
+            width: 100%;
+        }
+        .one8{
+            height: max-content;
+            width: max-content;
+            font-size: medium;
+            margin-top: 35px;
+            margin-left: 450px;
+
+        }
+        .one9{
+            display: inline;
+            margin: 10px;
+        }
+        .section2{
+            height: 90vh;
+            width: 100%;
+            background-image: url(https://flaris.pl/wp-content/uploads/2018/09/tlo_do_foty.png);
+            background-position: center;
+            background-size: cover;
+        }
+        .one10{
+            height: 80vh;
+            width: 100%;
+            background-image: url(https://flaris.pl/wp-content/uploads/2018/09/fota-copy1-1.png);
+            background-position: center;
+            background-size: cover;
+            padding: 1px;
+        }
+        .one11{
+            height: 10vh;
+            width: 100%;
+            background-image:url(https://flaris.pl/wp-content/uploads/2018/09/fota-copy-2-1.png) ;
+            background-position: center;
+            background-size: cover;
+            background-color: white;
+            padding: 1px;
+        }
+        .one12{
+            height: max-content;
+            width: max-content;
+            margin-top: 25px;
+            margin-left: 550px;
+        }
+        .one13{
+            color: black;
+            font-weight: bold;
+            font-size: 180%;
+        }
+        .one14{
+            margin-left: 300px;
+            margin-top: 40px;
+        }
+        .one15{
+            height: 50px;
+            width: 300px;
+            margin-top: -10px;
+            margin-left: 570px;
+        }
+        .one16{
+            color: black;
+            font-weight: bold;
+            font-size: 180%;
+            padding: 1px;
+          
+
+        }
+        .one17{
+            height: max-content;
+            width: max-content;
+            margin-top: 20px;
+            margin-left: 400px;
+            text-align: center;
+        }
+        .section3{
+            height: 110vh;
+            width: 100%;
+        }
+        .one18{
+            height: 80vh;
+            width: 30%;
+            border: 1px solid rgba(0, 0, 0, 0.151);
+            border-radius: 5px;
+            margin-left: 70px;
+            margin-top: 160px;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+        .one19{
+            height: max-content;
+            width: max-content;
+            text-align: center;
+            color: black;
+            margin-top: 80px;
+            font-size: 100%;
+            margin-left: 30px;
+        }
+        .one20{
+            margin-top: 30px;
+            margin-left: 30px;
+            line-height: 25px;
+            color: rgba(0, 0, 0, 0.634);
+        }
+        .one21{
+            height: 80vh;
+            width: 55%;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 160px;
+            margin-left: 40px;
+            background-image: url(https://flaris.pl/wp-content/uploads/2019/01/wlasciwosci_przelomowy.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .section4{
+            height: 85vh;
+            width: 100%;
+        }
+        .one22{
+            height: 80vh;
+            width: 55%;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 20px;
+            margin-left: 30px;
+            border: 1px solid;
+            background-image: url(https://flaris.pl/wp-content/uploads/2019/01/wlasciwosci_przyjazny.jpg);
+            background-position: center;
+            background-size: cover;
+
+        }
+        .one23{
+            height: 80vh;
+            width: 30%;
+            /* border: 1px solid; */
+            margin-left: 30px;
+            margin-top: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.151);
+            border-radius: 5px;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+        .one24{
+            height: max-content;
+            width: max-content;
+            color: black;
+            margin-top: 80px;
+            font-size: 100%;
+            margin-left: 20px;
+            font-weight: bold;
+
+        }
+        .one25{
+            text-align: center;
+            line-height: 25px;
+            margin-top: 30px;
+            color: rgba(0, 0, 0, 0.634);
+            margin-left: 15px;
+        }
+        .section5{
+            height: 120vh;
+            width: 100%;
+            /* border: 1px solid orange; */
+
+        }
+        /* .one26{
+            height: 80vh;
+            width: 25%;
+            border: 1px solid;
+            margin-left: 50px;
+            margin-top: 20px;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+        .one27{
+            height: 100px;
+            width:100%;
+
+        }
+        .one28{
+            margin-top: 20px;
+            margin-left: 20px;
+            font-size: 100%;
+
+        }
+        .one29{
+            margin-top: 5px;
+            margin-left: 20px;
+            font-size: 100%;
+            font-weight: bold;
+        }
+        .one30{
+            width: 40px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .one31{
+            height: 100px;
+            width:100%;
+        }
+        .one32{
+            margin-top: 20px;
+            margin-left: 20px;
+            font-size: 100%;
+
+        }
+        .one33{
+            margin-top: 5px;
+            margin-left: 20px;
+            font-size: 100%;
+            font-weight: bold;
+
+        }
+        .one34{
+            width: 40px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .one35{
+            height: 100px;
+            width:100%;
+        }
+        .one36{
+            margin-top: 20px;
+            margin-left: 20px;
+            font-size: 100%;
+
+        }
+        .one37{
+            margin-top: 5px;
+            margin-left: 20px;
+            font-size: 100%;
+            font-weight: bold;
+
+        }
+        .one38{
+            width: 40px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .one39{
+            height: 100px;
+            width:100%;
+
+        }
+        .one40{
+            margin-top: 20px;
+            margin-left: 20px;
+            font-size: 100%;
+
+        }
+        .one41{
+            margin-top: 5px;
+            margin-left: 20px;
+            font-size: 100%;
+            font-weight: bold;
+
+        }
+        .one42{
+            width: 40px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .one43{
+            height: 80vh;
+            width: 60%;
+            border: 1px solid;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 20px;
+            margin-left: 100px;
+        } */
+        
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="one">
+            <a href="./index.html"><img src="https://flaris.pl/wp-content/uploads/2022/06/logoFlarisSVG.svg" alt=""></a>
+        </div>
+        <div class="navlist">
+            <ul>
+                <li class="two"><a href="./Aircraft.html">AIRCRAFT</a></li>
+                <li class="two"><a href="./piloting courses.html">PILOTING COURSES</a></li>
+                <li class="two"><a href="./purchase.html">PURCHASE</a></li>
+                <li class="two"><a href="">NEWS</a></li>
+                <li class="two"><a href="">OUR STORY</a></li>
+                <li class="two"><a href="">PRESS ROOM</a></li>
+                <li class="two"><a href="./contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="three">
+            <i class="fa-brands fa-facebook fb"></i>
+            <i class="fa-brands fa-youtube youtube"></i>
+            <i class="fa-brands fa-instagram instagram"></i>
+            <div class="four">
+            <img src="https://flaris.pl/wp-content/uploads/2022/07/iconPLflag-03.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="one1">
+            <i class="fa-regular fa-greater-than one2"></i>
+            <span class="one3">THE FASTEST PERSONAL JET</span>
+            <i class="fa-regular fa-less-than one4"></i>
+        </div>
+        <div class="one5">
+            <h1 class="one6">SPEED – RANGE – FREEDOM – GRASS AIRSTRIPS <br> TAKE-OFF</h1>
+        </div>
+        <i class="fa-solid fa-angle-down one7"></i>
+    </div>
+    <div class="section1">
+        <div class="one8">
+            <ul>
+                <li class="one9">Features</li>
+                <li class="one9">Safety</li>
+                <li class="one9">Fuselage</li>
+                <li class="one9">Specification</a></li>
+                <li class="one9">Buy</li>
+            </ul>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="one10">
+            <div class="one12">
+                <i class="fa-regular fa-greater-than one2"></i>
+                <span class="one13">FLARIS LAR 01</span>
+                <i class="fa-regular fa-less-than one4"></i>
+
+            </div>
+            <p class="one14">The first and only aircraft of its type in the world, FLARIS LAR 01 unites jet-tier performance <br> with levels of safety and economic accessibility previously reserved solely for small general <br> aviation units. The cutting-edge construction made overcoming many traditional limitations <br> possible and resulted in creation of an internationally exceptional aircraft!</p>
+        </div>
+        <div class="one11"></div>
+        <div class="one15">
+            <i class="fa-regular fa-greater-than one2"></i>
+            <span class="one16">FEATURES </span>
+            <i class="fa-regular fa-less-than one4"></i>
+
+        </div>
+        <p class="one17">FLARIS LAR 1 is a single-engine jet aircraft with lightweight, composite <br> construction. It creates a new category of small, agile jets, ideal for quick <br> movement for any purpose.</p>
+    </div>
+    <div class="section3">
+        <div class="one18">
+            <h2 class="one19">SOAR TO A HIGHER LEVEL OF COMFORT</h2>
+            <p class="one20">The intuition of piloting FLARIS LAR 1 is <br> apparent in its minimal operations, secure <br> stall, and automatic spin recovery. The jet <br> was designed to be flown by a single pilot <br> (with Garmin G600 Txi radio and navigation <br> system and FFAS® interactive onboard <br> computer acting as a copilot). The only <br> qualification required to fly FLARIS LAR 1 is <br> a Private Pilot License (PPL).</p>
+        </div>
+        <div class="one21"></div>
+    </div>
+    <div class="section4">
+        <div class="one22"></div>
+        <div class="one23">
+            <div class="one24">REVOLUTIONARY AND ENVIRONMENTALLY <br> FRIENDLY AVIATION</div>
+            <p class="one25">FLARIS LAR 1 is one tonne lighter than VLJ <br> aircraft and initiates a brand new category of <br> High-Speed Personal Jet. Light construction, <br> extraordinary aerodynamics, and a cutting- <br> edge FJ33-5A engine operated with an ECU <br> computer allowed a significant reduction of <br> fuel consumption and exhaust gas emission. <br> Consequently, FLARIS LAR 1 is <br> environmentally friendly.</p>
+        </div>
+    </div>
+    <!-- <div class="section5">
+        <div class="one26">
+            <div class="one27">
+            <p class="one28">Manufacturer</p>
+            <p class="one29">Metal-Master</p>
+            <hr class="one30">
+            </div>
+            <div class="one31">
+            <p class="one32">Length</p>
+            <p class="one33">8,32 m / 27ft 4in</p>
+            <hr class="one34">
+            </div>
+            <div class="one35">
+                <p class="one36">Height</p>
+                <p class="one37">2,43 m / 7ft 12in</p>
+                    <hr class="one38">
+            </div>
+            <div class="one39">
+                <p class="one40">Span</p>
+                <p class="one41">8,68 m / 28ft 6in</p>
+                <hr class="one42">
+            </div>
+        </div>
+        <div class="one43"></div>
+    </div> -->
+    
+</body>
+</html>

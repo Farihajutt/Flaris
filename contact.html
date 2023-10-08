@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+         * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar {
+            height: 20vh;
+            width: 100%;
+            background-color: black;
+            padding: 1px;
+            cursor: pointer;
+            position: fixed;
+            top: 0;
+        }
+
+        .one {
+            height: 40px;
+            width: 150px;
+            margin-top: 25px;
+            margin-left: 50px;
+
+        }
+
+        .navlist {
+            height: 60px;
+            width: 800px;
+            margin-top: -30px;
+            margin-left: 300px;
+            font-size: 80%;
+            font-weight: bold;
+        }
+
+        .two {
+            display: inline;
+            margin: 10px;
+
+        }
+        .two a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .three {
+            height: 40px;
+            width: 150px;
+            margin-left: 1120px;
+            margin-top: -60px;
+
+        }
+
+        .fb {
+            color: white;
+        }
+
+        .youtube {
+            color: white;
+            margin-left: 5px;
+        }
+
+        .instagram {
+            color: white;
+            margin-left: 5px;
+        }
+
+        .four {
+            margin-left: 110px;
+            height: 25px;
+            width: 25px;
+            margin-top: -20px;
+
+        }
+        .section{
+            height: 100vh;
+            width: 100%;
+            background-image: url(https://flaris.pl/wp-content/uploads/2019/01/header_banner_kontakt_filtr.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 1px;
+        }
+        .one1{
+            height: max-content;
+            width: max-content;
+            text-align: center;
+            margin-top: 170px;
+            margin-left: 480px;
+            font-size: 160%;
+            color: rgb(0, 170, 255);
+
+        }
+        .gsign{
+            font-size: 60%;
+            font-weight: bold;
+            color: rgb(0, 170, 255);
+
+        }
+        .lsign{
+            font-weight: bold;
+            font-size: 50%;
+
+        }
+        .one2{
+            height: max-content;
+            width: max-content;
+            color: white;
+            margin-left: 500px;
+            margin-top: 20px;
+            font-weight: 1;
+            font-size: 220%;
+        }
+        .section1{
+            height: 55vh;
+            width: 100%;
+        }
+        .one3{
+            height: 55vh;
+            width: 400px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .one4{
+            height: 55vh;
+            width: 400px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .one5{
+            height: 55vh;
+            width: 400px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .one31{
+            height: max-content;
+            width: max-content;
+            margin-top: 40px;
+            margin-left: 60px;
+            color: black;
+            font-weight: bold;
+            font-size: 170%;
+        }
+        .one32{
+            height: max-content;
+            width: max-content;
+            border: 1px solid;
+            margin-left: 60px;
+            margin-top: 30px;
+
+        }
+        .one33{
+            margin-left: 75px;
+            margin-top: -25px;
+
+        }
+        .one34{
+            height: max-content;
+            width: max max-content;
+            margin-left: 60px;
+            margin-top: 30px;
+        }
+        .one35{
+            margin-left: 80px;
+            margin-top: -25px;
+
+        }
+        .one36{
+            height: max-content;
+            width: max-content;
+            margin-left: 60px;
+            margin-top: 30px;
+        }
+        .one37{
+            margin-left: 78px;
+            margin-top: -20px;
+        }
+        .one41{
+            height: max-content;
+            width: max-content;
+            margin-top: 20px;
+            margin-left: 60px;
+            color: black;
+            font-weight: bold;
+            font-size: 170%;
+            line-height: 70px;
+
+        }
+        .one42{
+            margin-top: 30px;
+            margin-left: 60px;
+            font-weight: bold;
+        }
+        .one43{
+            margin-top: 20px;
+            margin-left: 60px;
+            font-weight: bold;
+            cursor: pointer;
+            color: rgb(0, 170, 255);
+        }
+        .one51{
+            height: max-content;
+            width: max-content;
+            margin-top: 20px;
+            margin-left: 60px;
+            color: black;
+            font-weight: bold;
+            font-size: 170%;
+        }
+        .one52{
+            margin-top: 20px;
+            font-size: large;
+            font-weight: bold;
+            margin-left: 50px;
+        }
+        .section2{
+            height: 70vh;
+            width: 100%;
+
+        }
+        .one38{
+            margin-left: 30px;
+            margin-top: 25px;
+        }
+        .section3{
+            height: 80vh;
+            width: 100%;
+        }
+        .onek{
+            height: 75vh;
+            width: 40%;
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(http://flaris.pl/wp-content/uploads/2019/01/masz_pytania_filtr.jpg);
+            background-position: center;
+            background-size: cover;
+        
+        }
+        .onel{
+            height: 75vh;
+            width: 55%;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+        .oneA{
+            height: max-content;
+            width: max-content;
+            margin-top: 80px;
+            margin-left: 80px;
+            color: black;
+            font-weight: bold;
+            font-size: 170%;
+
+        }
+        .oneb{
+            height: 40px;
+            width: 230px;
+            border: 1px solid;
+            margin-left: 60px;
+            margin-top: 30px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .onec{
+            height: 40px;
+            width: 230px;
+            border: 1px solid;
+            margin-left: 350px;
+            margin-top: -40px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .oned{
+            height: 40px;
+            width: 230px;
+            border: 1px solid;
+            margin-left: 60px;
+            margin-top: 30px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .onee{
+            height: 40px;
+            width: 230px;
+            border: 1px solid;
+            margin-left: 350px;
+            margin-top: -40px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .onef{
+            height: 120px;
+            width: 530px;
+            border: 1px solid;
+            margin-top: 10px;
+            margin-left: 60px;
+            text-align: 20px;
+        }
+        .section5{
+            height: 85vh;
+            width: 100%;
+            background-color: rgb(0,19,43);
+            padding: 1px;
+        }
+        .style13{
+            height: 30px;
+            width: 470px;
+        
+            margin-top: 80px;
+            margin-left: 120px;
+        }
+        .style14{
+            height: 30px;
+            width: 150px;
+        
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+            font-weight: bold;
+            font-size: 100%;
+        }
+        .style15{
+            height: 30px;
+            width: 150px;
+            
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+        }
+        .style16{
+            height: 30px;
+            width: 150px;
+            
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+        }
+        .style17{
+            height: 30px;
+            width: 470px;
+            
+            margin-left: 120px;
+            margin-top: 20px;
+
+        }
+        .style18{
+            height: 30px;
+            width: 150px;
+            
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+            
+        
+        }
+        .style19{
+            height: 30px;
+            width: 150px;
+            
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+        }
+        .style20{
+            height: 30px;
+            width: 150px;
+            
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+        }
+        .style21{
+            height: 30px;
+            width: 470px;
+        
+            margin-left: 120px;
+            margin-top: 10px;
+
+        }
+        .style22{
+            height: 30px;
+            width: 150px;
+            
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+            
+        
+        }
+        .style23{
+            height: 30px;
+            width: 150px;
+            
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+        }
+        .style24{
+            height: 30px;
+            width: 150px;
+            
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+        }
+        .style25{
+            height: 30px;
+            width: 150px;
+        
+            color: white;
+            margin-left: 120px;
+            margin-top: 10px;
+        }
+        .style26{
+            height: 50px;
+            width: 300px;
+            
+            margin-left: 700px;
+            margin-top: -160px;
+            color: white;
+            font-size: 150%;
+        }
+        .style27{
+            height: 60px;
+            width: 400px;
+        
+            margin-top: 20px;
+        
+            margin-left: 700px;
+        }
+        .style28{
+            background-color: white;
+            
+        
+            border-radius: 10px;
+            height: 50px;
+            width: 400px;
+            padding: 10px;
+            
+        }
+        .style29{
+            height: 50px;
+            width: 400px;
+            border: 2px solid white;
+        
+            border-radius: 10px;
+            margin-left: 700px;
+            margin-top: 10px;
+            background-color: transparent;
+            color: white;
+            font-size: 120%;
+            cursor: pointer;
+        }
+        .style29:hover{
+            background-color: steelblue;
+        }
+        .style30{
+            height: 30px;
+            width: 400px;
+            margin-left: 700px;
+            margin-top: 20px;
+            color: white;
+            font-weight: 1;
+        }
+        .style31{
+            height: 50px;
+            width: 200px;
+            margin-left: 120px;
+            
+        }
+        .image1{
+            height: 60%;
+            width: 80%;
+        }
+        .style32{
+            border: 1px solid rgb(0, 170, 255);
+            width: 1100px;
+            margin-left: 100px;
+
+        }
+        .style33{
+            margin-left: 120px;
+            color: rgb(189,191,199);
+            margin-top: 40px;
+        
+        }
+        .style34{
+            height: 50px;
+            width: 150px;
+            margin-left: 1000px;
+        }
+        .fbb{
+            font-size: 130%;
+            margin-top: 10px;
+        }
+        .youutube{
+            font-size: 130%;
+            margin-left: 15px;
+            margin-top: 10px;
+        }
+        .insta{
+            font-size: 130%;
+            margin-left: 15px;
+            margin-top: 10px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="one">
+            <a href="./index.html"><img src="https://flaris.pl/wp-content/uploads/2022/06/logoFlarisSVG.svg" alt=""></a>
+
+        </div>
+        <div class="navlist">
+            <ul>
+                <li class="two"><a href="./Aircraft.html">AIRCRAFT</a></li>
+                <li class="two"><a href="./piloting courses.html">PILOTING COURSES</a></li>
+                <li class="two"><a href="./purchase.html">PURCHASE</a></li>
+                <li class="two"><a href="">NEWS</a></li>
+                <li class="two"><a href="">OUR STORY</a></li>
+                <li class="two"><a href="">PRESS ROOM</a></li>
+                <li class="two"><a href="./contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="three">
+            <i class="fa-brands fa-facebook fb"></i>
+            <i class="fa-brands fa-youtube youtube"></i>
+            <i class="fa-brands fa-instagram instagram"></i>
+            <div class="four">
+            <img src="https://flaris.pl/wp-content/uploads/2022/07/iconPLflag-03.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="one1">
+            <i class="fa-regular fa-greater-than gsign"></i>
+            <SPan class="type">GOT QUESTIONS?</SPan>
+            <i class="fa-solid fa-less-than lsign"></i>
+        </div>
+        <h1 class="one2">CONTACT US</h1>
+    </div>
+    <div class="section1">
+        <div class="one3">
+            <div class="one31">
+                <i class="fa-regular fa-greater-than gsign"></i>
+                <span>CONTACT FOR MEDIA</span>
+            </div>
+            <div class="one32">
+                <img src="https://flaris.pl/wp-content/uploads/2018/10/placeholder.png" alt="">
+            </div>
+            <p class="one33">ul. Nowa 4, 58-562 Podgórzyn</p>
+            <div class="one34">
+                <img src="https://flaris.pl/wp-content/uploads/2018/10/phone-call.png" alt="">
+            </div>
+            <p class="one35">+48 757 000 012 <br>
+                +48 757 550 601</p>
+                <div class="one36">
+                    <img src="https://flaris.pl/wp-content/uploads/2018/10/envelope.png" alt="">
+                </div>
+                <p class="one37">press@flaris.pl</p>
+        </div>
+        <div class="one4">
+            <div class="one41">
+                <i class="fa-regular fa-greater-than gsign"></i>
+                <span>PROJECT AND <br> IMPLEMENTATION</span>
+            </div>
+            <p class="one42">Metal-Master</p>
+            <p class="one43">Go to website
+            </p>
+        </div>
+        <div class="one5">
+            <div class="one51">
+                <i class="fa-regular fa-greater-than gsign"></i>
+                <span>PRODUCER</span>
+            </div>
+                <p class="one52">FLARIS Sp. z o.o</p>
+                <div class="one32">
+                    <img src="https://flaris.pl/wp-content/uploads/2018/10/placeholder.png" alt="">
+                </div>
+                <p class="one33">ul. Nowa 4, 58-562 Podgórzyn</p>
+                <div class="one34">
+                    <img src="https://flaris.pl/wp-content/uploads/2018/10/phone-call.png" alt="">
+                </div>
+                <p class="one35">+48 757 000 012 <br>
+                    +48 757 550 601</p>
+                    <div class="one36">
+                        <img src="https://flaris.pl/wp-content/uploads/2018/10/envelope.png" alt="">
+                    </div>
+                    <p class="one37">info@flaris.pl</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="section2">
+        <img class="one38" src="https://snazzy-maps-cdn.azureedge.net/assets/132-light-gray.png?v=20170626081135" alt="">
+        <img src="https://snazzy-maps-cdn.azureedge.net/assets/151-ultra-light-with-labels.png?v=20170626083737" alt="">
+    </div>
+    <div class="section3">
+        <div class="onek"></div>
+        <div class="onel">
+            <div class="oneA">
+                <i class="fa-regular fa-greater-than gsign"></i>
+                <span>GOT QUESTIONS? CONTACT US</span>
+
+            </div>
+            <input class="oneb" type=" text" placeholder="First name" style="border: 1px solid rgba(0, 0, 0, 0.192); border-radius: 5px ; padding-left: 5px;">
+            <input class="onec" type="text" placeholder="E-mail" style="border: 1px solid rgba(0, 0, 0, 0.192); border-radius: 5px ; padding-left: 5px;">
+            <input class="oned" type="text" placeholder="Last name" style="border: 1px solid rgba(0, 0, 0, 0.192); border-radius: 5px ; padding-left: 5px;">
+            <input class="onee" type="text" placeholder="Phone number" style="border: 1px solid rgba(0, 0, 0, 0.192); border-radius: 5px ; padding-left: 5px;">
+            <input class="onef" type="text" placeholder="Your message" style="border: 1px solid rgba(0, 0, 0, 0.192); border-radius: 5px ; padding-left: 5px;">
+        </div>
+    </div>
+    <div class="section5">
+        <div class="style13">
+            <div class="style14">Legal</div>
+            <div class="style15">About</div>
+            <div class="style16">Informations</div>
+        </div>
+        <div class="style17">
+            <div class="style18">GDPR</div>
+            <div class="style19">Press room</div>
+            <div class="style20">FAQ</div>
+        </div>
+        <div class="style21">
+            <div class="style22">Privacy policy</div>
+            <div class="style23">Manufacturer</div>
+            <div class="style24">News</div>
+        </div>
+        <div class="style25">Cookies</div>
+        <div class="style26">Sign up to our newsletter
+        </div>
+        <div class="style27">
+            <input class="style28" type="text" placeholder="e-mail">
+        </div>
+        <button class="style29">Sign up</button>
+        <h4 class="style30">Form protected by reCAPTCHA and Google</h4>
+        <div class="style31">
+           <img src="https://flaris.pl/wp-content/uploads/2018/09/LOGO_FLARIS_white-1.png" alt="">
+        </div>
+        <hr class="style32">
+        <p class="style33">© 2022 Flaris. All rights reserved.</p>
+        <div class="style34">
+            <i class="fa-brands fa-facebook fb fbb "></i>
+            <i class="fa-brands fa-youtube youtube youutube"></i>
+            <i class="fa-brands fa-instagram instagram insta"></i>
+        </div>
+    </div>
+    
+</body>
+</html>
